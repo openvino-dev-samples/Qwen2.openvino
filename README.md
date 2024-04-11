@@ -66,7 +66,7 @@ python3 convert.py --model_id Qwen/Qwen1.5-0.5B-Chat --precision int4 --output {
      huggingface-cli download --resume-download --local-dir-use-symlinks False Qwen/Qwen1.5-0.5B-Chat --local-dir {your_path}/Qwen1.5-0.5B-Chat
      ```
 
-## 3. Run the streaming chatbot
+## 3. Run streaming chatbot
 
 ```
 python3 chat.py --model_path {your_path}/Qwen1.5-0.5B-Chat-ov --max_sequence_length 4096 --device CPU
