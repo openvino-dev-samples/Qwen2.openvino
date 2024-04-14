@@ -37,11 +37,7 @@ if __name__ == '__main__':
     ir_model_path = Path(args.output)
     if ir_model_path.exists() == False:
         os.mkdir(ir_model_path)
-
-    model_kwargs = {
-        "trust_remote_code": True,
-        "config": AutoConfig.from_pretrained(args.model_id, trust_remote_code=True),
-    }
+        
     compression_configs = {
         "sym": False,
         "group_size": 128,
