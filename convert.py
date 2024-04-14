@@ -15,7 +15,7 @@ if __name__ == '__main__':
                         help='Show this help message and exit.')
     parser.add_argument('-m',
                         '--model_id',
-                        default='Qwen/Qwen1.5-0.5B',
+                        default='Qwen/Qwen1.5-0.5B-Chat',
                         required=False,
                         type=str,
                         help='orignal model path')
