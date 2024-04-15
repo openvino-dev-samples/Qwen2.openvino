@@ -4,3 +4,4 @@ transformers>=4.38.2
 openvino>=2024.0.0
 onnx>=1.15.0
 huggingface-hub>=0.21.3
+gradio>=4.26.0
