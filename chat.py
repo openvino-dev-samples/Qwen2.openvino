@@ -2,7 +2,6 @@ import argparse
 from typing import List, Tuple
 from threading import Thread
 import torch
-import gradio as gr
 from optimum.intel.openvino import OVModelForCausalLM
 from transformers import (AutoTokenizer, AutoConfig,
                           TextIteratorStreamer, StoppingCriteriaList, StoppingCriteria)
