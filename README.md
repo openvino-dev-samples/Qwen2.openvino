@@ -42,7 +42,7 @@ pip install -r requirements.txt
 Since the Huggingface model needs to be converted to an OpenVINO IR model, you need to download the model and convert.
 
 ```
-python3 convert.py --model_id Qwen/Qwen1.5-0.5B-Chat --precision int4 --output {your_path}/Qwen1.5-0.5B-Chat-ov
+python3 convert.py --model_id qwen/Qwen2-7B-Instruct --precision int4 --output {your_path}/Qwen2-7B-Instruct-ov --modelscope
 ```
 
 ### Parameters that can be selected
@@ -50,26 +50,13 @@ python3 convert.py --model_id Qwen/Qwen1.5-0.5B-Chat --precision int4 --output {
 * `--model_id` - path (absolute path) to be used from Huggngface_hub (https://huggingface.co/models) or the directory
   where the model is located.
 * `--precision` - model precision: fp16, int8 or int4.
-* `--output` - the path where the converted model is saved
-* If you have difficulty accessing `huggingface`, you can try to use `mirror-hf` to download
-
-  Linux
-     ```
-     export HF_ENDPOINT=https://hf-mirror.com
-     ```
-  Windows Powershell
-     ```
-     $env:HF_ENDPOINT = "https://hf-mirror.com"
-     ```
-  Download model
-     ```
-     huggingface-cli download --resume-download --local-dir-use-symlinks False Qwen/Qwen1.5-0.5B-Chat --local-dir {your_path}/Qwen1.5-0.5B-Chat
-     ```
+* `--output` - the path where the converted model is saved.
+* `--modelscope` - if to download model from Model Scope.
 
 ## 3. Run streaming chatbot
 
 ```
-python3 chat.py --model_path {your_path}/Qwen1.5-0.5B-Chat-ov --max_sequence_length 4096 --device CPU
+python3 chat.py --model_path {your_path}/Qwen2-7B-Instruct-ov --max_sequence_length 4096 --device CPU
 ```
 
 ### Parameters that can be selected
