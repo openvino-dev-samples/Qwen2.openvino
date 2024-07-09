@@ -109,7 +109,7 @@ Qwen2-OpenVINO: "Nature's Magic: A Journey Through the Forest Crystal"
    - More information can be found in [Install GPU drivers](https://github.com/openvinotoolkit/openvino_notebooks/wiki/Ubuntu#1-install-python-git-and-gpu-drivers-optional)
 
 4. Is C++ supported ?
-   - Please refer to this [example](https://github.com/openvinotoolkit/openvino.genai/tree/master/text_generation/causal_lm/cpp)
+   - Please refer to this [example](https://github.com/openvinotoolkit/openvino.genai/tree/master/src)
 
 
 Post your questions [here](https://community.intel.com/t5/Intel-Distribution-of-OpenVINO/bd-p/distribution-openvino-toolkit).
