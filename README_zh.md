@@ -36,6 +36,9 @@ pip install wheel setuptools
 
 pip install -r requirements.txt
 ```
+> Note:
+> 如果你使用的是一个已经存在的python环境，请使用以下方法进行更新
+> pip install -U --upgrade-strategy eager -r requirements.txt
 
 ## 2. 转换模型
 
