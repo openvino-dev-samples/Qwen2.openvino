@@ -117,7 +117,6 @@ if __name__ == "__main__":
 
         partial_text = ""
         for new_text in streamer:
-            new_text = new_text
             print(new_text, end="", flush=True)
             partial_text += new_text
         print("\n")
