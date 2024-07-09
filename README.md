@@ -36,6 +36,9 @@ pip install wheel setuptools
 
 pip install -r requirements.txt
 ```
+> Note:
+> If you are using an existing python environment, recommend following command to use all the dependencies with latest versions:  
+> pip install -U --upgrade-strategy eager -r requirements.txt
 
 ## 2. Convert model
 
