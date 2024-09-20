@@ -57,7 +57,6 @@ if __name__ == "__main__":
         device=args.device,
         ov_config=ov_config,
         config=AutoConfig.from_pretrained(model_dir),
-        trust_remote_code=True,
     )
 
     streamer = TextIteratorStreamer(

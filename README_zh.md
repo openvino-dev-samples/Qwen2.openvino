@@ -61,6 +61,12 @@ python3 convert.py --model_id qwen/Qwen2-7B-Instruct --precision int4 --output {
 python3 chat.py --model_path {your_path}/Qwen2-7B-Instruct-ov --max_sequence_length 4096 --device CPU
 ```
 
+或者
+
+```
+python3 chat_genai.py --model_path {your_path}/Qwen2-7B-Instruct-ov --max_sequence_length 4096 --device CPU
+```
+
 ### 可以选择的参数
 
 * `--model_path` - OpenVINO IR 模型所在目录的路径。
