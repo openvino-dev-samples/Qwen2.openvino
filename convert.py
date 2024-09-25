@@ -79,3 +79,7 @@ if __name__ == '__main__':
     from optimum.exporters.openvino.convert import export_tokenizer
     export_tokenizer(tokenizer, ir_model_path)
     print("====Finished=====")
+    del ov_model
+    del model_path
+    
+    
