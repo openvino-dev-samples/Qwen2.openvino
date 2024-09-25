@@ -1,0 +1,380 @@
+Microsoft Windows [Version 10.0.22631.4169]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Windows\System32>call C:\Users\arda\miniforge3\Scripts\activate
+
+(base) C:\Windows\System32>d:
+
+(base) D:\>cd ov-cpp-test\w_openvino_toolkit_windows_2024.4.0.dev20240815_x86_64
+
+(base) D:\ov-cpp-test\w_openvino_toolkit_windows_2024.4.0.dev20240815_x86_64>setupvars.bat
+Python 3.10.14
+[setupvars.bat] OpenVINO environment initialized
+
+(base) D:\ov-cpp-test\w_openvino_toolkit_windows_2024.4.0.dev20240815_x86_64>cd ..\openvino.genai\
+
+(base) D:\ov-cpp-test\openvino.genai>build\llm\qwen_cpp\Release\qwen.exe -m Qwen2-7B-Instruct-INT4_SYM\modified_openvino_model.xml -token Qwen2-7B-Instruct-INT4_SYM\openvino_tokenizer.xml -detoken Qwen2-7B-Instruct-INT4_SYM\openvino_detokenizer.xml -d GPU --output_fixed_len 512 --force_max_generation
+OpenVINO Runtime
+    Version : 2024.4.0
+    Build   : 2024.4.0-16366-ab952f51145
+
+Load Qwen tokenizer took 148.229 ms
+Compile LLM model took 45092.1 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+What is OpenVINO?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 25
+First token took 222.531 ms
+OpenVINO is an open-source software toolkit developed by Intel for building and deploying high-performance, multi-platform deep learning and computer vision applications. It provides a suite of tools and libraries that enable developers to optimize, deploy, and run deep learning models on various hardware platforms, including CPUs, GPUs, and edge devices.
+
+Key features of OpenVINO include:
+
+1. **Model Optimization**: It includes the Model Optimizer tool, which can convert models from various frameworks (like TensorFlow, Caffe, ONNX, etc.) into a format that can be efficiently executed by OpenVINO's inference engine.
+
+2. **Inference Engine**: This component of OpenVINO is responsible for executing the optimized models on the target hardware. It supports multiple backends, including native CPU, GPU, and other specialized accelerators.
+
+3. **Computer Vision and Neural Network Inference**: OpenVINO provides pre-trained models for common computer vision tasks such as object detection, object recognition, and image classification. These models can be used directly or fine-tuned for specific applications.
+
+4. **Hardware Acceleration**: OpenVINO supports a wide range of hardware platforms, including Intel CPUs, GPUs, and Intel's own Myriad VPU (Myriad X and Myriad 2) for edge devices.
+
+5. **Deployment Tools**: It includes tools for packaging models into deployable formats and for deploying applications on various platforms, including desktops, servers, and edge devices.
+
+6. **APIs and Libraries**: OpenVINO provides APIs and libraries for integrating computer vision and deep learning functionalities into applications, making it easier for developers to incorporate these features into their software.
+
+7. **Performance Optimization**: OpenVINO includes tools for analyzing and optimizing the performance of deep learning models, helping developers to achieve the best possible speed and efficiency on their target hardware.
+
+Overall, OpenVINO simplifies the process of developing and deploying deep learning and computer vision applications by providing a comprehensive set of tools and resources that handle the complexities of model optimization and hardware acceleration.
+Other Avg inference took total 30533.2 ms token num 407 first 222.531 ms  avg 75.0202 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+If I have 100 million dollars, what kinds of projects should I invest to maximize my benefits in background of a growing number of artificial intelligence technologies?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 51
+First token took 291.713 ms
+Investing in artificial intelligence technologies can be a smart move given the current growth and potential future impact of AI. Here are some project ideas that could maximize your benefits:
+
+1. **AI Research and Development**: Consider funding research institutions or universities that specialize in AI research. This could include funding for AI researchers, providing resources for AI labs, or supporting AI-related academic programs. This investment could lead to breakthroughs that could be applied to various industries.
+
+2. **AI Startups**: Invest in early-stage AI startups that are developing innovative technologies or solutions. This could include startups working on areas like natural language processing, computer vision, machine learning frameworks, or AI ethics. Early investments in these companies could yield significant returns as they grow.
+
+3. **AI Infrastructure**: Invest in building or upgrading AI infrastructure such as data centers, cloud computing services optimized for AI workloads, or specialized hardware like GPUs and TPUs. This infrastructure can support AI research and development, as well as provide services to other companies that need AI capabilities.
+
+4. **AI Education and Training**: Develop programs that train the next generation of AI professionals. This could include scholarships for students studying AI, online courses, or partnerships with educational institutions to create AI-focused curricula. Investing in human capital can lead to a more skilled workforce that can drive innovation.
+
+5. **AI Ethics and Governance**: Invest in organizations that focus on AI ethics, governance, and policy development. As AI becomes more integrated into society, ensuring it is used responsibly and ethically is crucial. This could include funding for research on AI's societal impact, ethical guidelines, and legal frameworks.
+
+6. **AI for Social Good**: Support projects that use AI to address societal challenges such as healthcare, education, environmental sustainability, or social inequality. This could involve funding AI solutions that help diagnose diseases more accurately, provide personalized learning experiences, or optimize resource allocation.
+
+7. **AI in Traditional Industries**: Invest in companies that are integrating AI into traditional industries like manufacturing, retail, or agriculture. This could lead to more efficient operations, better customer experiences, and new business models.
+
+8. **AI Hardware and Software**: Consider investing in companies that develop hardware and software specifically designed for AI applications. This could include advancements in AI chips, software development kits, or tools that simplify AI deployment.
+
+9. **AI in Healthcare**: Given the potential of AI in improving diagnostics, treatment, and patient care, investing in AI solutions for healthcare could be highly impactful. This could range from developing AI-powered medical imaging tools to AI-driven personalized medicine.
+
+
+Other Avg inference took total 38745.5 ms token num 511 first 291.713 ms  avg 75.8228 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Originally, There were three types of cake in the cake store: Strawberry Cream Cake, Chocolate Coconut Cake, and Red Velvet Brownie Cake. Customer number is large enough so that no cake would be left every day when the store close. As the name suggested, each cake has two ingredients: Strawberry Cream Cake with strawberries and cream, Chocolate Coconut Cake with chocolate and coconut, and Red Velvet Brownie Cake with red velvet and brownie. Different ingredients can be compatibly mixed with each other without any issue. After the cake is made, there are often some leftover materials for each ingredient. In order to reduce waste, the store often combine the extra ingredients in pairs to make new small gifts to gain extra sales. For example, strawberries and chocolate can be mixed to create strawberry-flavored chocolate sauce, and brownies and shredded coconut can be mixed to create brownie coconut cookies. Only two ingredients can be mixed, and mixture with more than two ingredients can cost a lot of time and will not be adopted. In order to decrease the problem complexity, the store will also prevent from careful decorations or other difficult steps as in procedure of making cakes, so that time cost can be omited. By analogy, if all the ingredients can be combined in pairs, what small products can the store make in the end?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 280
+First token took 1030.94 ms
+To determine the possible small products the store can make by combining the leftover ingredients in pairs, let's list the ingredients first:
+
+1. **Strawberries**
+2. **Cream**
+3. **Chocolate**
+4. **Coconut**
+5. **Red Velvet**
+6. **Brownies**
+
+Now, let's consider all possible combinations of these ingredients taken two at a time:
+
+### 1. **Strawberries and Cream**
+   - **Strawberry Cream Sauce**
+
+### 2. **Strawberries and Chocolate**
+   - **Strawberry Chocolate Sauce**
+
+### 3. **Strawberries and Coconut**
+   - **Strawberry Coconut Mix**
+
+### 4. **Strawberries and Red Velvet**
+   - **Strawberry Red Velvet Mix**
+
+### 5. **Strawberries and Brownies**
+   - **Strawberry Brownie Mix**
+
+### 6. **Cream and Chocolate**
+   - **Chocolate Cream Sauce**
+
+### 7. **Cream and Coconut**
+   - **Coconut Cream Sauce**
+
+### 8. **Cream and Red Velvet**
+   - **Red Velvet Cream Mix**
+
+### 9. **Cream and Brownies**
+   - **Brownie Cream Mix**
+
+### 10. **Chocolate and Coconut**
+    - **Chocolate Coconut Mix**
+
+### 11. **Chocolate and Red Velvet**
+    - **Red Velvet Chocolate Mix**
+
+### 12. **Chocolate and Brownies**
+    - **Brownie Chocolate Mix**
+
+### 13. **Coconut and Red Velvet**
+    - **Red Velvet Coconut Mix**
+
+### 14. **Coconut and Brownies**
+    - **Brownie Coconut Mix**
+
+### 15. **Red Velvet and Brownies**
+    - **Red Velvet Brownie Mix**
+
+### Summary of Possible Small Products:
+
+1. **Strawberry Cream Sauce**
+2. **Strawberry Chocolate Sauce**
+3. **Strawberry Coconut Mix**
+4. **Strawberry Red Velvet Mix**
+5. **Strawberry Brownie Mix**
+6. **Chocolate Cream Sauce**
+7. **Coconut Cream Sauce**
+8. **Red Velvet Cream Mix**
+9. **Brownie Cream Mix**
+10. **Chocolate Coconut Mix**
+11. **Red Velvet Chocolate Mix**
+12. **Brownie Chocolate Mix**
+13. **Red Velvet Coconut Mix**
+14. **Brownie Coconut Mix**
+15. **Red Velvet Brownie Mix**
+
+These combinations provide a variety of
+Other Avg inference took total 39179.8 ms token num 511 first 1030.94 ms  avg 76.6728 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+There is a table, which contains three drawers: left drawer, middle drawer and right drawer; Tom Ethan, Elbert Alex, Jack Johnson, and Mario Thompson all saw a bag of chocolates on the table. Tom Ethan asked Elbert Alex and Jack Johnson to go out, and after that, he put the bag of chocolates in the right drawer in front of Mario Thompson; after Jack Johnson came back, Tom Ethan asked Mario Thompson to go out to find Elbert Alex, and took it from the left drawer in front of Jack Johnson. Then He take out a box of biscuits and put them in the middle drawer; when Elbert Alex and Mario Thompson returned, Tom Ethan asked Jack Johnson and Mario Thompson to go out to buy a bottle of soy sauce. Tom Ethan waited for a long time, and found that Jack Johnson and Mario Thompson had not returned, so he sent Elbert Alex to look for them, but in the end only Jack Johnson and Elbert Alex came back. Jack Johnson told Tom Ethan that at first they could not find any shop that is providing soy sauce, so they had to separate to search other shops, which is why Mario Thompson got lost; on the way back, Jack Johnson ran into Elbert Alex, and they rushed back first. Therefore, Tom Ethan asked them to go out to find Mario Thompson again; in order to prevent getting lost again, Tom Ethan told Elbert Alex and Jack Johnson to walk together at all time, and even if they could not get the soy sauce, they had to find and get back with Mario Thompson. As a result, Elbert Alex and Jack Johnson found Mario Thompson outside and found that he had bought a bottle of soy sauce. The three felt that Tom Ethan never went out to do anthing but they are busy all the time. So they were very angry. They discussed and made a conclusion. After going back to see Tom Ethan, they should not tell him about the soy sauce they bought, and asked Jack Johnson to hide the soy sauce in his backpack. After the three of them came back together, they pretended to claim that they did not foudn and bought soy sauce according to the plan, and hoped that Tom Ethan would go out together to buy things in the future, and he should not be so lazy. Tom Ethan agreed and felt sory about that. When everyone finally stood in front of the table, the four of them wrote down the list of items they knew and the location of the items. So the question is: is the information writen by these four people consistent, and why?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 538
+First token took 1845.46 ms
+The information written by Tom Ethan, Elbert Alex, Jack Johnson, and Mario Thompson appears to be consistent based on the narrative provided. Here's a breakdown of the information and how it aligns:
+
+1. **Initial Setup**: Tom Ethan moved the bag of chocolates to the right drawer and placed it in front of Mario Thompson. This setup is consistent with Tom Ethan's actions.
+
+2. **Movement of Chocolates**: After Jack Johnson returned, Tom Ethan moved the chocolates from the right drawer to the left drawer and placed them in front of Jack Johnson. This movement is also consistent with Tom Ethan's actions.
+
+3. **Introduction of Biscuits**: Tom Ethan moved a box of biscuits to the middle drawer. This action is consistent with his actions described.
+
+4. **Search for Soy Sauce**: Tom Ethan asked Jack Johnson and Mario Thompson to go out to buy soy sauce. This request aligns with his actions.
+
+5. **Separation and Reunification**: Jack Johnson and Elbert Alex found Mario Thompson outside and brought him back. This event is consistent with their actions.
+
+6. **Finding Soy Sauce**: Jack Johnson and Elbert Alex found a bottle of soy sauce and brought it back. This is consistent with their actions.
+
+7. **Plan to Mislead Tom Ethan**: The plan to hide the soy sauce and pretend they bought it elsewhere aligns with their actions after returning.
+
+8. **Consistency in the Plan**: The plan to hide the soy sauce and pretend they bought it elsewhere is consistent with their actions after returning.
+
+9. **Tom Ethan's Reaction**: Tom Ethan agreed to go out with them in the future and felt sorry for his inactivity. This aligns with his character traits based on the narrative.
+
+Given the information provided, the actions described by each person align with each other and with Tom Ethan's actions. Therefore, the information written by these four people is consistent.
+Other Avg inference took total 29428.2 ms token num 383 first 1845.46 ms  avg 76.836 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+The process of Origami seems simple at the first glance, but in fact, it still requires a very complicated process to do it well. Taking folding a rose as an example, we can divide the entire process into three stages, including: firstly creating a grid of creases, secondly making a three-dimensional base, and thirdly finishing petal decoration. The first step is to create a grid of creases: this step is a bit like the first step of folding a gift of thousand-paper-crane. That is to say, we can fold the paper in half (or namedly equal-folds) through the symmetrical axis, and repeat such step in the other symmetrical axis. And then apply multiple equal-folds in sequence relative to each smaller rectangle divided by the two creases; After that, the creases in each direction will interweave into a complete set of uniform small square splicing patterns; these small squares form a reference space similar to a two-dimensional coordinate system, allowing us to combine adjacent creases on the plane from Three-dimensional high platforms or depressions are folded on the two-dimensional small squares to facilitate the next steps of folding. It should be noted that, in the process of creating grid creases, there may be rare cases when the folds are not aligned. The consequences of this error can be very serious. And just like the butterfly effect, it is only a slight difference at the beginning , and in the end it may generate a disaster world which is completely different from plan. Anyway, let's continue. The second step is make the three-dimensional base: In this step, we need to fold a set of symmetrical three-dimensional high platforms or depressions based on the grid creases. From the symmetry analysis, it is not difficult to find that the rose will have four symmetrical three-dimensional high platforms and supporting depressions. Therefore, we can firstly fold out a quarter of the depression and plateau patterns, which would help build a base to compose into a complex 3D structure. And then, we use this quarter as a template, and fold out the repeating patterns on the remaining three parts of the whole structure in turn. It is worth noting that the layout of the high platform not only needs to consider the regular contrast and symmetrical distribution of the length and width, but also needs to ensure the orderliness of the height dimension. This is very important, since we will never go back to this step after all parts were made, and you would better start from first step if you make anything wrong in the this step. Similar to the precautions in the first stage, please handle all the corners in three dimensions to ensure that they conform to the layout required in the plan, which would help us avoid the butterfly effect and increase the robustness in the process of three-dimensional folding. Just like building a skyscrapper in the real world, people usually take a lot of time when building the base but soon get finished when extending the structure after that. Time is worth to cost in the base, but would be saved in the future after you succeed in base. Anyway, let's continue. During the first quarter of the pattern, repeated comparisons with the finished rose were made to eliminate any possible errors in the first place. The final stage is to finish the petal grooming. At this stage, we often emphasize an important term called folding-by-heart. The intention here is no longer literally serious, but focus is moved to our understanding of the shape of a rose in nature, and we usually use natural curves to continuously correct the shape of petals in order to approach the shape of rose petals in reality. One more comment: this is also the cause of randomness to the art, which can be generated differently by different people. Recall that rose should be adjusted close to reality, so in the last step of this stage, we need to open the bloom in the center of the rose, by pulling on the four petals that have been bent. This process may be accompanied by the collapse of the overall structure of the rose, so we should be very careful to save strength of adjustment, and it must be well controlled to avoid irreversible consequences. Ultimately, after three stages of folding, we end up with a crown of rose with a similar shape close to reality. If condition is permited, we can wrap a green paper strip twisted on a straightened iron wire, and insert the rose crown we just created onto one side of the iron wire. In this way, we got a hand-made rose with a green stem. We can also repeat the steps above to increase the number of rose, so that it can be made into a cluster. Different color of rose is usually more attractive and can be considered as a better plan of gift to your friend. In summary, by creating a grid of creases, making a three-dimensional base, and finishing with petals, we created a three-dimensional rose from a two-dimensional paper. Although this process may seem simple, it is indeed a work of art created by us humans with the help of imagination and common materials. At last, Please comment to assess the above content.<|im_end|>
+<|im_start|>assistant
+
+input lenghth 1052
+First token took 3244.28 ms
+The content you've provided offers a detailed and insightful explanation of the process of creating an origami rose, from the initial grid of creases to the final petal grooming. Here are some points to consider for assessing the content:
+
+### Clarity and Structure:
+- **Step-by-Step Breakdown:** The content is well-structured into three main stages, which makes it easy to follow and understand the process sequentially.
+- **Technical Language:** The use of technical terms like "grid of creases," "three-dimensional base," and "folding-by-heart" adds depth to the explanation but might require some clarification for beginners.
+
+### Accuracy:
+- **Origami Process:** The steps described are accurate and follow the traditional origami process for creating a rose. The mention of the butterfly effect highlights the importance of precision, which is crucial in origami.
+- **Precautions:** The warnings about misalignments and the importance of careful handling are important reminders for those attempting the craft.
+
+### Practicality:
+- **Tips for Success:** The advice to compare the pattern with the finished product to minimize errors is practical and helpful for beginners.
+- **Safety and Control:** The caution about controlling the adjustments to avoid irreversible damage is a practical tip for those who might struggle with the delicate nature of origami.
+
+### Creativity and Artistic Insight:
+- **Folding-by-Heart:** This term adds a creative dimension to the process, emphasizing the importance of understanding the natural form of the rose and adapting the technique accordingly.
+- **Personal Touch:** The suggestion to adjust the bloom and the final touches adds a personal touch, making the origami rose unique and closer to reality.
+
+### Conclusion:
+The content provides a comprehensive guide to creating an origami rose, blending technical origami instructions with artistic insights. It's well-suited for both beginners looking to learn the basics and experienced origami enthusiasts seeking inspiration. The inclusion of practical tips and the emphasis on the creative process make it a valuable resource for anyone interested in origami.
+
+### Suggestions for Improvement:
+- **Illustrations or Diagrams:** Including diagrams or illustrations could significantly enhance the understanding of the steps, especially for visual learners.
+- **Additional Tips:** More tips on common mistakes and how to avoid them could be beneficial, especially for beginners who might struggle with the finer points of origami.
+
+Overall, the content is informative, well-organized, and provides a good balance between technical detail and artistic insight, making it a strong guide for anyone interested in creating an origami rose.
+Other Avg inference took total 39666.7 ms token num 507 first 3244.28 ms  avg 78.238 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+患者男，年龄29岁，血型O，因思维迟钝，易激怒，因发热伴牙龈出血14天，乏力、头晕5天就诊我院急诊科。快速完善检查，血常规显示患者三系血细胞重度减低，凝血功能检查提示APTT明显延长，纤维蛋白原降低，血液科会诊后发现患者高热、牙龈持续出血，胸骨压痛阳性.于3903年3月7日入院治疗，出现头痛、头晕、伴发热（最高体温42℃）症状，曾到其他医院就医。8日症状有所好转，9日仍有头痛、 呕吐，四肢乏力伴发热。10日凌晨到本院就诊。患者5d前出现突发性思维迟钝，脾气暴躁，略有不顺心就出现攻击行为，在院外未行任何诊治。既往身体健康，平素性格内向。体格检查无异常。血常规白细胞中单核细胞百分比升高。D-二聚体定量1412μg/L，骨髓穿刺示增生极度活跃，异常早幼粒细胞占94%.外周血涂片见大量早幼粒细胞，并可在胞浆见到柴捆样细胞.以下是血常规详细信息：1.病人红细胞计 数结果：3.2 x10^12/L. 附正常参考范围：新生儿:（6.0～7.0）×10^12/L；婴儿：（5.2～7.0）×10^12/L; 儿童：（4.2～5.2）×10^12/L; 成人男：（4.0～5.5）×10^12/L; 成人女：（3.5～5.0）×10^12/L. 临床意义：生理性红细胞和血红蛋白增多的原因：精神因素（冲 动、兴奋、恐惧、冷水浴刺激等导致肾上腺素分泌增多的因素）、红细胞代偿性增生（长期低气压、缺氧刺激，多次献血）；生理性红细胞和血红蛋白减少的原因：造血原料相对不足，多见于妊娠、6个月～2岁婴幼儿、某些老年性造血功能减退；病理性增多：多见于频繁呕吐、出汗过多、大面积烧伤、血液浓缩，慢性肺心病、肺气肿、高原病、肿瘤以及真性红细胞增多症等；病理性减少：多见于白血病等血液系统疾病；急性大出血、严重的组织损伤及血细胞的破坏等；合成障碍，见于缺铁、维生素B12缺乏等。2. 病人血红蛋白测量结果：108g/L. 附血红蛋白正常参考范围：男性120～160g/L；女性110～150g/L；新生儿170～200g/L；临床意义：临床意义与红细胞计数相仿， 但能更好地反映贫血程度，极重度贫血（Hb<30g/L）、重度贫血（31～60g/L）、中度贫血（61～90g/L）、男性轻度贫血（90~120g/L） 、女性轻度贫血（90~110g/L）。3. 病人白细胞计数结果：13.6 x 10^9/L; 附白细胞计数正常参考范围：成人（4.0～10.0）×10^9/L； 新生儿（11.0～12.0）×10^9/L。临床意义：1）生理性白细胞计数增高见于剧烈运动、妊娠、新生儿；2）病理性白细胞增高见于急性化 脓性感染、尿毒症、白血病、组织损伤、急性出血等；3）病理性白细胞减少见于再生障碍性贫血、某些传染病、肝硬化、脾功能亢进、 放疗化疗等。4. 病人白细胞分类技术结果：中性粒细胞（N）50%、嗜酸性粒细胞（E）3.8%、嗜碱性粒细胞（B）0.2%、淋巴细胞（L）45%、单核细胞（M）1%。附白细胞分类计数正常参考范围：中性粒细胞（N）50%～70%、嗜酸性粒细胞（E）1%～5%、嗜碱性粒细胞（B）0～1%、淋巴细胞（L）20%～40%、单核细胞（M）3%～8%；临床意义：1）中性粒细胞为血液中的主要吞噬细胞，在细菌性感染中起重要作用 。2）嗜酸性粒细胞①减少见于伤寒、副伤寒、大手术后、严重烧伤、长期用肾上腺皮质激素等。②增多见于过敏性疾病、皮肤病、寄生虫 病，一些血液病及肿瘤，如慢性粒细胞性白血病、鼻咽癌、肺癌以及宫颈癌等；3）嗜碱性粒细胞 a 减少见于速发型过敏反应如过敏性休克，肾上腺皮质激素使用过量等。b 增多见于血液病如慢性粒细胞白血病，创伤及中毒，恶性肿瘤，过敏性疾病等；4）淋巴细胞 a 减少多见于传染病的急性期、放射病、细胞免疫缺陷病、长期应用肾上腺皮质激素后或放射线接触等。b 增多见于传染性淋巴细胞增多症、结核病、疟疾、慢性淋巴细胞白血病、百日咳、某些病毒感染等；5）单核细胞增多见于传染病或寄生虫病、结核病活动期、单核细胞白血 病、疟疾等。5. 病人血小板计数结果：91 x10^9/L. 附血小板计数正常参考范围：（100～300）×10^9/L. 临床意义：1）血小板计数增 高见于真性红细胞增多症、出血性血小板增多症、多发性骨髓瘤、慢性粒细胞性白血病及某些恶性肿瘤的早期等；2）血小板计数减低见 于 a 骨髓造血功能受损，如再生障碍性贫血，急性白血病；b 血小板破坏过多，如脾功能亢进；c 血小板消耗过多，如弥散性血管内凝 血等。6. 以往病例分析内容参考：白血病一般分为急性白血病和慢性白血病。1）急性白血病血常规报告表现为：白细胞增高，少数大于100×10^9/L，称为高白细胞白血病，部分患者白细胞正常或减少，低者可小于1.0×10^9/L，以AML中的M3型多见。在白细胞分类中，80％ 以上可见大量的幼稚细胞，有时仅见幼稚细胞和少量成熟的细胞，而无中间型细胞，称为白血病的裂孔现象。少数白细胞低的患者周围血幼稚细胞很少，此类患者必须骨髓穿刺才能确诊。多数急性白血病患者初诊时有不同程度的贫血；一般属正常细胞正色素型。但贫血很快会进行性加重。30％的患者血涂片中可见有核红细胞。血小板计数绝大部分患者减少，严重者小于10×10^9/L，仅极少数患者血小板计数 正常。2） 慢性白血病血常规报告表现为：白细胞总数明显增高，通常大于30×10^9/L。半数患者大于100×10^9/L。中性粒细胞明显增多 ，可见各阶段粒细胞，以中性中幼粒，晚幼粒细胞居多，原始粒细胞小于等于10％，通常为1％～5％，嗜酸和嗜碱粒细胞亦增多。初诊时约有50％患者血小板增高，少数可大于1000×10^9/L。红细胞和血红蛋白一般在正常范围，若出现血红蛋白减低，血小板计数明显升高或 降低，则提示疾病向加速期或急变期转化。7. 历史相关研究: 急性髓系白血病（AML）是造血干细胞恶性克隆性疾病。在AML的诊断、治 疗以及判断预后的过程中，基因异常是一项重要指标。随着基因检测技术的不断进步，越来越多与AML发生相关的基因被人们发现，并且 这些基因在指导预后方面有重要意义。常见和急性髓系白血病相关的基因突变有: 1）RUNX1-RUNX1T1; 2）CBFB-MYH11; 3）NPM1：核磷蛋白1（nucleophosmin 1，NPM1）; 4）CEBPA：CCAAT增强子结合蛋白α基因（CCAAT/en－hancer binding protein α，CEBPA）; 5）MLLT3-KMT2A; 6）DEK-NUP214; 7）KMT2A：KMT2A基因（也称为MLL基因）问：请基于以上信息做出判断，该患者是否有罹患急性白血病的风险？请结合上述内容给出判断的详细解释，并简要总结潜在的早期征兆、预防方法、相关的基因突变、常用的治疗手段，以及当前已上市和正在临床阶段的药物清单。答：<|im_end|>
+<|im_start|>assistant
+
+input lenghth 2145
+First token took 6472.94 ms
+根据您提供的信息，患者有以下几点特征，这可能提示他有罹患急性白血病的风险：
+
+1. **血常规异常**：患者出现三系血细胞（红细胞、白细胞、血小板）重度减低，这在急性白血病中是常见的表现。同时，白细胞计数 异常升高，且白细胞分类中出现大量幼稚细胞，这符合急性白血病的特征。
+
+2. **凝血功能异常**：APTT（活化部分凝血活酶时间）延长，纤维蛋白原降低，这可能提示患者存在凝血功能障碍，这在急性白血病中 也较为常见。
+
+3. **高热、持续出血**：患者出现高热、牙龈持续出血等症状，这在急性白血病患者中较为常见。
+
+4. **骨髓穿刺结果**：骨髓穿刺显示增生极度活跃，异常早幼粒细胞占94%，并见大量早幼粒细胞和柴捆样细胞，这符合急性白血病的骨髓象特征。
+
+5. **血常规详细信息**：红细胞计数和血红蛋白水平均低于正常范围，提示患者存在贫血；白细胞计数异常升高，血小板计数减少，这 符合急性白血病的血常规表现。
+
+6. **D-二聚体定量**：D-二聚体定量1412μg/L，这可能提示存在凝血功能障碍，这在急性白血病中较为常见。
+
+7. **基因异常**：患者可能涉及的基因突变包括RUNX1-RUNX1T1、CBFB-MYH11、NPM1、CEBPA、MLLT3-KMT2A、DE-N-NUP144和K2A基因（MLL基因）。这些基因突变在急性髓系白血病的诊断和预后评估中具有重要意义。
+
+综上所述，患者有罹患急性白血病的风险。早期征兆可能包括但不限于：持续发热、易感染、出血倾向、贫血、疲劳、体重下降、淋巴结肿大等。预防措施包括定期进行血液检查，尤其是对于有家族史或高风险因素的人群。对于急性白血病的治疗，通常包括化疗、靶向治疗、造血干细胞移植等手段。目前，针对某些特定基因突变的个性化治疗方案正在不断发展，
+Other Avg inference took total 41304 ms token num 511 first 6472.94 ms  avg 80.8297 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Originally, There were three types of cake in the cake store: Strawberry Cream Cake, Chocolate Coconut Cake, and Red Velvet Brownie Cake. Customer number is large enough so that no cake would be left every day when the store close. As the name suggested, each cake has two ingredients: Strawberry Cream Cake with strawberries and cream, Chocolate Coconut Cake with chocolate and coconut, and Red Velvet Brownie Cake with red velvet and brownie. Different ingredients can be compatibly mixed with each other without any issue. After the cake is made, there are often some leftover materials for each ingredient. In order to reduce waste, the store often combine the extra ingredients in pairs to make new small gifts to gain extra sales. For example, strawberries and chocolate can be mixed to create strawberry-flavored chocolate sauce, and brownies and shredded coconut can be mixed to create brownie coconut cookies. Only two ingredients can be mixed, and mixture with more than two ingredients can cost a lot of time and will not be adopted. In order to decrease the problem complexity, the store will also prevent from careful decorations or other difficult steps as in procedure of making cakes, so that time cost can be omited. By analogy, if all the ingredients can be combined in pairs, what small products can the store make in the end?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 280
+First token took 1036.29 ms
+To determine the possible small products the store can make by combining the leftover ingredients in pairs, let's list the ingredients first:
+
+1. **Strawberries**
+2. **Cream**
+3. **Chocolate**
+4. **Coconut**
+5. **Red Velvet**
+6. **Brownies**
+
+Now, let's consider all possible combinations of these ingredients taken two at a time:
+
+### 1. **Strawberries and Cream**
+   - **Strawberry Cream Sauce**
+
+### 2. **Strawberries and Chocolate**
+   - **Strawberry Chocolate Sauce**
+
+### 3. **Strawberries and Coconut**
+   - **Strawberry Coconut Mix**
+
+### 4. **Strawberries and Red Velvet**
+   - **Strawberry Red Velvet Mix**
+
+### 5. **Strawberries and Brownies**
+   - **Strawberry Brownie Mix**
+
+### 6. **Cream and Chocolate**
+   - **Chocolate Cream Sauce**
+
+### 7. **Cream and Coconut**
+   - **Coconut Cream Sauce**
+
+### 8. **Cream and Red Velvet**
+   - **Red Velvet Cream Mix**
+
+### 9. **Cream and Brownies**
+   - **Brownie Cream Mix**
+
+### 10. **Chocolate and Coconut**
+    - **Chocolate Coconut Mix**
+
+### 11. **Chocolate and Red Velvet**
+    - **Red Velvet Chocolate Mix**
+
+### 12. **Chocolate and Brownies**
+    - **Brownie Chocolate Mix**
+
+### 13. **Coconut and Red Velvet**
+    - **Red Velvet Coconut Mix**
+
+### 14. **Coconut and Brownies**
+    - **Brownie Coconut Mix**
+
+### 15. **Red Velvet and Brownies**
+    - **Red Velvet Brownie Mix**
+
+### Summary of Possible Small Products:
+
+1. **Strawberry Cream Sauce**
+2. **Strawberry Chocolate Sauce**
+3. **Strawberry Coconut Mix**
+4. **Strawberry Red Velvet Mix**
+5. **Strawberry Brownie Mix**
+6. **Chocolate Cream Sauce**
+7. **Coconut Cream Sauce**
+8. **Red Velvet Cream Mix**
+9. **Brownie Cream Mix**
+10. **Chocolate Coconut Mix**
+11. **Red Velvet Chocolate Mix**
+12. **Brownie Chocolate Mix**
+13. **Red Velvet Coconut Mix**
+14. **Brownie Coconut Mix**
+15. **Red Velvet Brownie Mix**
+
+These combinations provide a variety of
+Other Avg inference took total 38979.6 ms token num 511 first 1036.29 ms  avg 76.281 ms
+ #### sentence: index <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+If I have 100 million dollars, what kinds of projects should I invest to maximize my benefits in background of a growing number of artificial intelligence technologies?<|im_end|>
+<|im_start|>assistant
+
+input lenghth 51
+First token took 293.154 ms
+Investing in artificial intelligence technologies can be a smart move given the current growth and potential future impact of AI. Here are some project ideas that could maximize your benefits:
+
+1. **AI Research and Development**: Consider funding research institutions or universities that specialize in AI research. This could include funding for AI researchers, providing resources for AI labs, or supporting AI-related academic programs. This investment could lead to breakthroughs that could be applied to various industries.
+
+2. **AI Startups**: Invest in early-stage AI startups that are developing innovative technologies or solutions. This could include startups working on areas like natural language processing, computer vision, machine learning frameworks, or AI ethics. Early investments in these companies could yield significant returns as they grow.
+
+3. **AI Infrastructure**: Invest in building or upgrading AI infrastructure such as data centers, cloud computing services optimized for AI workloads, or specialized hardware like GPUs and TPUs. This infrastructure can support AI research and development, as well as provide services to other companies that need AI capabilities.
+
+4. **AI Education and Training**: Develop programs that train the next generation of AI professionals. This could include scholarships for students studying AI, online courses, or partnerships with educational institutions to create AI-focused curricula. Investing in human capital can lead to a more skilled workforce that can drive innovation.
+
+5. **AI Ethics and Governance**: Invest in organizations that focus on AI ethics, governance, and policy development. As AI becomes more integrated into society, ensuring it is used responsibly and ethically is crucial. This could include funding for research on AI's societal impact, ethical guidelines, and legal frameworks.
+
+6. **AI for Social Good**: Support projects that use AI to address societal challenges such as healthcare, education, environmental sustainability, or social inequality. This could involve funding AI solutions that help diagnose diseases more accurately, provide personalized learning experiences, or optimize resource allocation.
+
+7. **AI in Traditional Industries**: Invest in companies that are integrating AI into traditional industries like manufacturing, retail, or agriculture. This could lead to more efficient operations, better customer experiences, and new business models.
+
+8. **AI Hardware and Software**: Consider investing in companies that develop hardware and software specifically designed for AI applications. This could include advancements in AI chips, software development kits, or tools that simplify AI deployment.
+
+9. **AI in Healthcare**: Given the potential of AI in improving diagnostics, treatment, and patient care, investing in AI solutions for healthcare could be highly impactful. This could range from developing AI-powered medical imaging tools to AI-driven personalized medicine.
+
+
+Other Avg inference took total 38722.9 ms token num 511 first 293.154 ms  avg 75.7786 ms
+input id, input token len, out token len, first token time, average time
+0, 25, 407, 222.531, 75.0202
+1, 51, 511, 291.713, 75.8228
+2, 280, 511, 1030.94, 76.6728
+3, 538, 383, 1845.46, 76.836
+4, 1052, 507, 3244.28, 78.238
+5, 2145, 511, 6472.94, 80.8297
+6, 280, 511, 1036.29, 76.281
+7, 51, 511, 293.154, 75.7786
+
+(base) D:\ov-cpp-test\openvino.genai>
