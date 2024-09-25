@@ -39,7 +39,7 @@ if __name__ == '__main__':
     ir_model_path = Path(args.model_id.split(
         "/")[1] + '-ov') if args.output is None else Path(args.output)
 
-    if ir_model_path.exists() == False:
+    if not ir_model_path.exists():
         os.mkdir(ir_model_path)
 
     compression_configs = {
