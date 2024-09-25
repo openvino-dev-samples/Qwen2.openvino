@@ -43,7 +43,7 @@ if __name__ == '__main__':
         os.mkdir(ir_model_path)
 
     compression_configs = {
-        "sym": False,
+        "sym": True,
         "group_size": 128,
         "ratio": 0.8,
     }
@@ -67,8 +67,10 @@ if __name__ == '__main__':
         ov_model = OVModelForCausalLM.from_pretrained(model_path, export=True,
                                                       compile=False, load_in_8bit=False)
 
+    print("====Saving IR=====")
     ov_model.save_pretrained(ir_model_path)
 
+    print("====Exporting tokenizer=====")
     tokenizer = AutoTokenizer.from_pretrained(
         model_path)
     tokenizer.save_pretrained(ir_model_path)
@@ -76,3 +78,4 @@ if __name__ == '__main__':
     print("====Exporting IR tokenizer=====")
     from optimum.exporters.openvino.convert import export_tokenizer
     export_tokenizer(tokenizer, ir_model_path)
+    print("====Finished=====")
